@@ -7,16 +7,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Header -->
+    <!-- Header / Navbar -->
     <header class="header">
         <div class="container nav-container">
             <div class="logo">Kishore<span>.</span></div>
-
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                ☰
-            </button>
-
-            <nav class="nav" id="navMenu">
+            <nav class="nav">
                 <a href="#about">About</a>
                 <a href="#skills">Skills</a>
                 <a href="#projects">Projects</a>
@@ -26,240 +21,257 @@
         </div>
     </header>
 
-    <!-- Hero -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="container hero-content">
-            <div class="hero-text reveal-up">
+            <div class="hero-text">
                 <p class="hero-tag">Web Developer • CS Student</p>
-                <h1>Hi, I'm <span>Kishore Prasad</span></h1>
-
+                <h1>Hi, I'm <span>Kishore P</span></h1>
                 <p class="hero-subtitle">
-                    I’m a full-stack developer currently studying at MITT, building real-world projects 
-                    using <strong>PHP, MySQL, JavaScript, and Next.js</strong>.  
-                    I focus on solving actual problems — online voting, organ donation systems, smart recycling, and more.
+                    Student at Maharaja Institute of Technology, Thandavapura.  
+                    I build full-stack web projects using <strong>PHP, MySQL, JavaScript, and Next.js</strong>,
+                    focusing on real-world problems like online voting, organ donation, and smart recycling.
                 </p>
-
                 <div class="hero-actions">
-                    <a href="https://github.com/Kishore2005-kish" class="btn primary" target="_blank">GitHub</a>
-                    <a href="https://www.linkedin.com/in/kishore-p-5695b9315/" class="btn outline" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/Kishore2005-kish" target="_blank" class="btn primary">View GitHub</a>
+                    <a href="https://www.linkedin.com/in/kishore-p-5695b9315/" target="_blank" class="btn outline">View LinkedIn</a>
                 </div>
-
                 <ul class="hero-highlights">
-                    <li>Online Voting System (DBMS Mini Project)</li>
-                    <li>SmartRecycle Incentive Tracker (Hackathon)</li>
-                    <li>Organ Donation Management System (Hackathon)</li>
+                    <li>DBMS Mini Project – Online Voting System</li>
+                    <li>Hackathon Project – SmartRecycle Incentive Tracker</li>
+                    <li>Hackathon Project – Organ Donation Management System</li>
                 </ul>
             </div>
 
-            <!-- Profile Photo -->
-            <div class="hero-photo reveal-up">
-                <img src="profile.jpg" alt="Kishore Prasad">
+            <div class="hero-photo">
+                <img src="profile.jpg" alt="Kishore P">
             </div>
         </div>
     </section>
 
-    <!-- About -->
+    <!-- About Section -->
     <section id="about" class="section">
         <div class="container section-grid">
-            <div class="reveal-up">
+            <div>
                 <h2>About Me</h2>
                 <p>
-                    I'm an engineering student from Karnataka who actually enjoys backend and database development.
-                    I turn real problems into functional web apps — secure voting systems, organ donation
-                    workflows, and incentive-based recycling platforms.
+                    I'm an engineering student from Karnataka who actually enjoys backend and database work
+                    instead of just copy-pasting from tutorials. I like taking real-world problems and turning
+                    them into working web applications – from secure <strong>online voting systems</strong> to
+                    <strong>hospital-ready organ donation</strong> platforms.
                 </p>
                 <p>
-                    Hackathons are where I sharpen my skills — fast prototyping, DB design, clean code, 
-                    and building stuff that works under pressure with actual users/judges in mind.
+                    I use hackathons and mini projects as a way to stress-test my skills – code structure,
+                    database design, and the ability to ship something that people can actually use, not just
+                    a “for internal marks” project.
                 </p>
             </div>
-
-            <div class="info-card reveal-up">
+            <div class="info-card">
                 <h3>Quick Info</h3>
                 <ul>
                     <li><span>Name:</span> Kishore P</li>
-                    <li><span>Role:</span> Developer & Student</li>
-                    <li><span>College:</span> MITT</li>
+                    <li><span>Role:</span> Student & Web Developer</li>
+                    <li><span>College:</span> Maharaja Institute of Technology, Thandavapura</li>
                     <li><span>Location:</span> Karnataka, India</li>
-                    <li><span>Interests:</span> Full-Stack, DBMS, Hackathons</li>
+                    <li><span>Interests:</span> Web Dev, DBMS, Hackathons, Problem Solving</li>
                 </ul>
             </div>
         </div>
     </section>
 
-    <!-- Skills -->
+    <!-- Skills Section -->
     <section id="skills" class="section section-alt">
         <div class="container">
-            <h2 class="reveal-up">Skills</h2>
-            <p class="section-subtitle reveal-up">
-                Skills I’ve actually used in real projects, not just watched tutorials for.
+            <h2>Skills</h2>
+            <p class="section-subtitle">
+                Not just “learnt”, but actually used in real projects and hackathons.
             </p>
 
             <div class="skills-grid">
-                <div class="skill-card reveal-up">
-                    <h3>Languages</h3>
+                <div class="skill-card">
+                    <h3>Languages & Core</h3>
                     <ul>
-                        <li>HTML, CSS</li>
+                        <li>HTML5, CSS3</li>
                         <li>JavaScript, TypeScript</li>
                         <li>PHP</li>
                         <li>SQL (MySQL)</li>
                     </ul>
                 </div>
-
-                <div class="skill-card reveal-up">
+                <div class="skill-card">
                     <h3>Frameworks & Tools</h3>
                     <ul>
-                        <li>Next.js</li>
-                        <li>Basic React</li>
-                        <li>REST APIs</li>
-                        <li>Git & GitHub, XAMPP</li>
+                        <li>Next.js (React)</li>
+                        <li>Basic REST APIs</li>
+                        <li>Git & GitHub</li>
+                        <li>XAMPP / Localhost setups</li>
                     </ul>
                 </div>
-
-                <div class="skill-card reveal-up">
-                    <h3>Strengths</h3>
+                <div class="skill-card">
+                    <h3>What I’m Good At</h3>
                     <ul>
-                        <li>Building full systems end-to-end</li>
-                        <li>DB schema design</li>
-                        <li>Backend debugging</li>
-                        <li>Frontend ↔ Backend integration</li>
+                        <li>Building full flows: login → dashboard → actions</li>
+                        <li>Designing DB schemas for real use-cases</li>
+                        <li>Connecting frontend forms to backend & DB</li>
+                        <li>Debugging messy PHP + JS issues</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Projects -->
+    <!-- Projects Section -->
     <section id="projects" class="section">
         <div class="container">
-            <h2 class="reveal-up">Projects</h2>
-            <p class="section-subtitle reveal-up">Real projects, not YouTube copy-paste.</p>
+            <h2>Projects</h2>
+            <p class="section-subtitle">
+                Real, working projects – not just tutorial clones.
+            </p>
 
             <div class="projects-grid">
+
                 <!-- SmartRecycle -->
-                <article class="project-card reveal-up">
+                <article class="project-card">
                     <h3>SmartRecycle Incentive Tracker</h3>
-                    <p class="project-tag">Hackathon • Full-Stack Web App</p>
+                    <p class="project-tag">Hackathon Mini Project • Web App</p>
                     <p>
-                        A recycling reward platform where users earn points for disposing waste.  
-                        Includes user dashboard, admin panel, redemption management and backend APIs.
+                        A smart incentive-based recycling platform where users can log their recyclable waste,
+                        earn points, and redeem rewards. Includes user dashboards, admin control, and an
+                        API-style architecture with separate frontend, admin, and database layers.
                     </p>
                     <ul class="project-points">
-                        <li>User & Admin dashboards</li>
-                        <li>Reward system + redemption tracking</li>
-                        <li>PHP API + MySQL database</li>
+                        <li>User dashboard for logging and viewing recycling activity</li>
+                        <li>Admin panel to manage rewards and redemptions</li>
+                        <li>Clear separation between frontend and backend via PHP APIs</li>
                     </ul>
-                    <a href="https://github.com/Kishore2005-kish/SMARTRECYCLE" target="_blank" class="btn small">GitHub Repo</a>
+                    <div class="project-links">
+                        <a href="https://github.com/Kishore2005-kish/SMARTRECYCLE" target="_blank" class="btn small">GitHub Repo</a>
+                    </div>
                 </article>
 
-                <!-- Online Voting -->
-                <article class="project-card reveal-up">
+                <!-- Online Voting System -->
+                <article class="project-card">
                     <h3>Online Voting System</h3>
-                    <p class="project-tag">DBMS Project • PHP + MySQL</p>
+                    <p class="project-tag">DBMS Mini Project • PHP + MySQL</p>
                     <p>
-                        A full online voting platform with student login, candidate management, and
-                        one-vote-per-user functionality.
+                        A secure online voting platform built as a DBMS mini project. Handles student
+                        authentication, candidate management, voting, and result calculation, all integrated
+                        with a MySQL backend.
                     </p>
                     <ul class="project-points">
-                        <li>Admin candidate & student management</li>
-                        <li>Secure voting logic</li>
-                        <li>Winner calculation & results page</li>
+                        <li>Student login restricted to registered users</li>
+                        <li>Admin panel for managing students and candidates</li>
+                        <li>Vote casting with one-vote-per-user logic</li>
+                        <li>Result page to view winner and vote counts</li>
                     </ul>
-                    <a href="https://github.com/Kishore2005-kish/online-voting-system" target="_blank" class="btn small">GitHub Repo</a>
+                    <div class="project-links">
+                        <a href="https://github.com/Kishore2005-kish/online-voting-system" target="_blank" class="btn small">GitHub Repo</a>
+                    </div>
                 </article>
 
-                <!-- Organ Donation -->
-                <article class="project-card reveal-up">
+                <!-- Organ Donation System -->
+                <article class="project-card">
                     <h3>Organ Donation Management System</h3>
-                    <p class="project-tag">Hackathon • Web App</p>
+                    <p class="project-tag">Hackathon Project • Web App</p>
                     <p>
-                        A hospital-ready donor management system with strict validations, consent
-                        workflows, and admin verification.
+                        A hospital-focused organ donation platform built for a hackathon. Features donor
+                        registration, organ request management, and an admin interface, with a focus on age
+                        checks, consent details, and verification workflows.
                     </p>
                     <ul class="project-points">
-                        <li>Donor/Recipient registration</li>
-                        <li>Admin approval & verification</li>
-                        <li>MySQL schema aligned with THOTA rules</li>
+                        <li>Donor & recipient registration forms with validation</li>
+                        <li>Admin dashboard to review, approve, or reject requests</li>
+                        <li>Structured MySQL schema for donors, organs, and requests</li>
                     </ul>
-                    <a href="https://github.com/Kishore2005-kish/organ-donation-system" target="_blank" class="btn small">GitHub Repo</a>
+                    <div class="project-links">
+                        <!-- Update this repo link if you use a different name -->
+                        <a href="https://github.com/Kishore2005-kish/organ-donation-system" target="_blank" class="btn small">GitHub Repo</a>
+                    </div>
                 </article>
+
             </div>
         </div>
     </section>
 
-    <!-- Achievements -->
+    <!-- Achievements Section -->
     <section id="achievements" class="section section-alt">
         <div class="container">
-            <h2 class="reveal-up">Achievements</h2>
+            <h2>Achievements & Participation</h2>
+            <p class="section-subtitle">
+                Hackathons and mini projects that actually pushed my skills.
+            </p>
 
             <div class="achievements-grid">
-                <!-- Card with winning photo -->
-                <div class="achievement-card reveal-up">
-                    <div class="achievement-photo">
-                        <!-- Put your winning pic in this file: winner.jpg -->
-                        <img src="winner.jpg" alt="Kishore receiving 1st prize at hackathon">
-                    </div>
+                <div class="achievement-card">
                     <h3>1st Prize – VVCE Hackathon</h3>
-                    <p class="achievement-subtitle">SmartRecycle Project</p>
+                    <p class="achievement-subtitle">Smart Incentive Recycle Tracker (SmartRecycle)</p>
                     <p>
-                        Built and showcased a complete recycling reward system with a working user → admin → backend flow.
-                        This project won 1st prize for its practicality, clean implementation, and impact on sustainability.
+                        Built and showcased a working prototype of the SmartRecycle platform, demonstrating a
+                        complete flow from waste logging to incentive redemption, with a functioning admin panel.
                     </p>
                 </div>
-
-                <div class="achievement-card reveal-up">
-                    <h3>8+ Hackathons</h3>
-                    <p class="achievement-subtitle">Full-Stack Prototyping</p>
+                <div class="achievement-card">
+                    <h3>Hackathon Participation</h3>
+                    <p class="achievement-subtitle">Multiple Events (8+ hackathons)</p>
                     <p>
-                        Regularly participate in hackathons focused on sustainability, healthcare, and civic-tech, improving
-                        my ability to design schemas, build backends, and ship working demos quickly.
+                        Consistently participated in hackathons over the last year, exploring domains like
+                        sustainability, healthcare, and civic-tech, and improving the speed of building
+                        full-stack solutions under time pressure.
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
+    <!-- Contact Section -->
     <section id="contact" class="section">
         <div class="container contact-grid">
-            <div class="reveal-up">
+            <div>
                 <h2>Contact</h2>
                 <p class="section-subtitle">
-                    Want to collaborate or need help building a project? Drop a message.
+                    Want to collaborate, discuss a project, or need help building a student/hackathon project?
+                    Drop a message.
                 </p>
 
                 <ul class="contact-list">
                     <li><span>Email:</span> your.email@example.com</li>
-                    <li><span>GitHub:</span> github.com/Kishore2005-kish</li>
-                    <li><span>LinkedIn:</span> kishore-p-5695b9315</li>
+                    <li><span>GitHub:</span> 
+                        <a href="https://github.com/Kishore2005-kish" target="_blank">
+                            github.com/Kishore2005-kish
+                        </a>
+                    </li>
+                    <li><span>LinkedIn:</span> 
+                        <a href="https://www.linkedin.com/in/kishore-p-5695b9315/" target="_blank">
+                            kishore-p-5695b9315
+                        </a>
+                    </li>
                 </ul>
+                <p class="note">
+                    (Replace the email above with your actual email before deploying.)
+                </p>
             </div>
 
-            <form class="contact-form reveal-up">
+            <form class="contact-form">
                 <div class="form-row">
                     <div class="form-group">
-                        <label>Name</label>
-                        <input type="text" placeholder="Your Name" required>
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Your name" required>
                     </div>
                     <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" placeholder="you@example.com" required>
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="you@example.com" required>
                     </div>
                 </div>
-
                 <div class="form-group">
-                    <label>Subject</label>
-                    <input type="text" placeholder="Collab, project, etc..." required>
+                    <label for="subject">Subject</label>
+                    <input id="subject" type="text" placeholder="Project, internship, collab..." required>
                 </div>
-
                 <div class="form-group">
-                    <label>Message</label>
-                    <textarea rows="5" placeholder="Write your message..." required></textarea>
+                    <label for="message">Message</label>
+                    <textarea id="message" rows="5" placeholder="Tell me a bit about what you have in mind..." required></textarea>
                 </div>
-
-                <button class="btn primary full-width">Send Message</button>
+                <button type="submit" class="btn primary full-width">Send Message (static demo)</button>
                 <p class="form-note">
-                    (You can hook this form to Formspree, EmailJS, or your own backend later.)
+                    You can wire this form to Formspree, EmailJS, or a custom backend later.
                 </p>
             </form>
         </div>
@@ -268,7 +280,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
-            <p>© <span id="year"></span> Kishore P</p>
+            <p>© <span id="year"></span> Kishore P. All rights reserved.</p>
             <div class="footer-links">
                 <a href="https://github.com/Kishore2005-kish" target="_blank">GitHub</a>
                 <a href="https://www.linkedin.com/in/kishore-p-5695b9315/" target="_blank">LinkedIn</a>
@@ -277,40 +289,8 @@
     </footer>
 
     <script>
-        // Footer year
-        document.getElementById("year").textContent = new Date().getFullYear();
-
-        // Mobile nav toggle
-        const navToggle = document.getElementById("navToggle");
-        const navMenu = document.getElementById("navMenu");
-
-        navToggle.addEventListener("click", () => {
-            navMenu.classList.toggle("nav-open");
-        });
-
-        navMenu.querySelectorAll("a").forEach(link => {
-            link.addEventListener("click", () => {
-                navMenu.classList.remove("nav-open");
-            });
-        });
-
-        // Scroll reveal
-        const revealEls = document.querySelectorAll(".reveal-up");
-
-        const observer = new IntersectionObserver(
-            entries => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("in-view");
-                        observer.unobserve(entry.target);
-                    }
-                });
-            },
-            { threshold: 0.15 }
-        );
-
-        revealEls.forEach(el => observer.observe(el));
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
     </script>
 </body>
 </html>
-
