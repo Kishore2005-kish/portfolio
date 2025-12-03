@@ -119,7 +119,6 @@ body {
     width: 100%;
 }
 
-/* hamburger button */
 .nav-toggle {
     display: none;
     border: none;
@@ -392,6 +391,26 @@ body {
     box-shadow: var(--shadow-soft);
 }
 
+.achievement-photo {
+    margin-bottom: 0.8rem;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.achievement-photo img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transform: scale(1.02);
+    transition: transform var(--transition), filter var(--transition);
+}
+
+.achievement-card:hover .achievement-photo img {
+    transform: scale(1.05);
+    filter: brightness(1.05);
+}
+
 .achievement-subtitle {
     color: var(--accent);
     font-size: 0.9rem;
@@ -577,6 +596,10 @@ body {
     .hero-photo img {
         width: 230px;
         height: 230px;
+    }
+
+    .achievement-photo img {
+        height: 200px;
     }
 
     .footer-content {
