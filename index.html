@@ -10,7 +10,7 @@
     <!-- Header -->
     <header class="header">
         <div class="container nav-container">
-            <div class="logo">Kishore P<span></span></div>
+            <div class="logo">Kishore<span>.</span></div>
 
             <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
                 ☰
@@ -31,11 +31,11 @@
         <div class="container hero-content">
             <div class="hero-text reveal-up">
                 <p class="hero-tag">Web Developer • CS Student</p>
-                <h1>Hi, I'm <span>Kishore P</span></h1>
+                <h1>Hi, I'm <span>Kishore Prasad</span></h1>
 
                 <p class="hero-subtitle">
                     I’m a full-stack developer currently studying at MITT, building real-world projects 
-                    using <strong>PHP, MySQL, JavaScript</strong>.  
+                    using <strong>PHP, MySQL, JavaScript, and Next.js</strong>.  
                     I focus on solving actual problems — online voting, organ donation systems, smart recycling, and more.
                 </p>
 
@@ -53,7 +53,7 @@
 
             <!-- Profile Photo -->
             <div class="hero-photo reveal-up">
-                <img src="profile.jpeg" alt="Kishore P">
+                <img src="profile.jpg" alt="Kishore Prasad">
             </div>
         </div>
     </section>
@@ -100,7 +100,7 @@
                     <h3>Languages</h3>
                     <ul>
                         <li>HTML, CSS</li>
-                        <li>JavaScript</li>
+                        <li>JavaScript, TypeScript</li>
                         <li>PHP</li>
                         <li>SQL (MySQL)</li>
                     </ul>
@@ -109,6 +109,7 @@
                 <div class="skill-card reveal-up">
                     <h3>Frameworks & Tools</h3>
                     <ul>
+                        <li>Next.js</li>
                         <li>Basic React</li>
                         <li>REST APIs</li>
                         <li>Git & GitHub, XAMPP</li>
@@ -192,12 +193,17 @@
             <h2 class="reveal-up">Achievements</h2>
 
             <div class="achievements-grid">
+                <!-- Card with winning photo -->
                 <div class="achievement-card reveal-up">
+                    <div class="achievement-photo">
+                        <!-- Put your winning pic in this file: winner.jpg -->
+                        <img src="winner.jpg" alt="Kishore receiving 1st prize at hackathon">
+                    </div>
                     <h3>1st Prize – VVCE Hackathon</h3>
                     <p class="achievement-subtitle">SmartRecycle Project</p>
                     <p>
-                        Built a complete recycling reward system with a proper user → admin → backend flow
-                        that worked end-to-end during the event.
+                        Built and showcased a complete recycling reward system with a working user → admin → backend flow.
+                        This project won 1st prize for its practicality, clean implementation, and impact on sustainability.
                     </p>
                 </div>
 
@@ -205,8 +211,8 @@
                     <h3>8+ Hackathons</h3>
                     <p class="achievement-subtitle">Full-Stack Prototyping</p>
                     <p>
-                        Learned to build fast and clean under pressure, focusing on backend logic, database
-                        design and shipping working demos instead of slides.
+                        Regularly participate in hackathons focused on sustainability, healthcare, and civic-tech, improving
+                        my ability to design schemas, build backends, and ship working demos quickly.
                     </p>
                 </div>
             </div>
@@ -223,9 +229,9 @@
                 </p>
 
                 <ul class="contact-list">
-                    <li><span>Email:</span> kishkeerthi24@gmail.com</li>
-                    <li><span>GitHub:</span> https://github.com/Kishore2005-kish</li>
-                    <li><span>LinkedIn:</span>https://www.linkedin.com/in/kishore-p-5695b9315/" target="_blank </li>
+                    <li><span>Email:</span> your.email@example.com</li>
+                    <li><span>GitHub:</span> github.com/Kishore2005-kish</li>
+                    <li><span>LinkedIn:</span> kishore-p-5695b9315</li>
                 </ul>
             </div>
 
@@ -253,7 +259,7 @@
 
                 <button class="btn primary full-width">Send Message</button>
                 <p class="form-note">
-                    
+                    (You can hook this form to Formspree, EmailJS, or your own backend later.)
                 </p>
             </form>
         </div>
@@ -282,7 +288,6 @@
             navMenu.classList.toggle("nav-open");
         });
 
-        // Close nav when a link is clicked (mobile)
         navMenu.querySelectorAll("a").forEach(link => {
             link.addEventListener("click", () => {
                 navMenu.classList.remove("nav-open");
