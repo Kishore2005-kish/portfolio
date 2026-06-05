@@ -15,4 +15,6 @@ Edit `src/data/portfolio.ts` for profile links, projects, achievements, skills, 
 
 ## Assets
 
-The resume is served from `public/Kishore.p_Resume.pdf`. Placeholder image slots are documented in `public/placeholders/IMAGE_MAP.md`.
+**Resume:** Put your PDF at `public/Kishore.p_Resume.pdf` (same filename). The site links to `/Kishore.p_Resume.pdf` — that file is bundled with the app and works locally and after deploy (Vercel, etc.). To update your resume, replace that file and push; do not use a path on your Mac in code.
+
+Placeholder image slots are documented in `public/placeholders/IMAGE_MAP.md`.
