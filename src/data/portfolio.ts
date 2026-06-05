@@ -42,7 +42,7 @@ export const profile = {
     "I build intelligent systems, impactful products, and human-centered digital experiences that solve real-world problems.",
   email: "kishkeerthi24@gmail.com",
   github: "https://github.com/Kishore2005-kish",
-  linkedin: "https://www.linkedin.com/in/add-your-linkedin",
+  linkedin: "https://www.linkedin.com/in/kishore-p24/",
   resume: "/Kishore.p_Resume.pdf",
   location: "India",
 };
