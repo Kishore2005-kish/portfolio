@@ -1,7 +1,10 @@
 import type { Metadata, Viewport } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { profile } from "@/data/portfolio";
+import { personJsonLd } from "@/lib/json-ld";
+import { siteUrl } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,7 +30,7 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: profile.name }],
   creator: profile.name,
-  metadataBase: new URL("https://kishore-p-portfolio.vercel.app"),
+  metadataBase: new URL(siteUrl),
   openGraph: {
     title: `${profile.name} - ${profile.role}`,
     description: profile.intro,
@@ -50,11 +53,18 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLd = personJsonLd();
+
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable}`}>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        />
         {children}
         <div className="noise" aria-hidden="true" />
+        <Analytics />
       </body>
     </html>
   );

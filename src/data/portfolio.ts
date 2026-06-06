@@ -29,6 +29,8 @@ export type Project = {
   imageSlot: string;
   imageSrc?: string;
   repo?: string;
+  demoUrl?: string;
+  metrics?: string[];
 };
 
 export const profile = {
@@ -44,6 +46,7 @@ export const profile = {
   github: "https://github.com/Kishore2005-kish",
   linkedin: "https://www.linkedin.com/in/kishore-p24/",
   resume: "/Kishore.p_Resume.pdf",
+  portrait: "/images/portrait.jpg",
   location: "India",
 };
 
@@ -114,6 +117,10 @@ export const flagship = {
   tagline: "Building the future of satellite anomaly prediction.",
   copy:
     "A startup-style AI product for monitoring space weather, analyzing satellite datasets, and predicting operational risk before anomalies become mission-impacting failures.",
+  proof: [
+    "Ingests NOAA space weather feeds and ESA satellite telemetry for unified risk monitoring.",
+    "Combines Random Forest, XGBoost, and LSTM models for anomaly scoring and forecast alerts.",
+  ],
   tech: ["Python", "TensorFlow", "PyTorch", "FastAPI", "React", "PostgreSQL"],
   features: [
     "NOAA Data Integration",
@@ -149,6 +156,7 @@ export const projects: Project[] = [
     imageSlot: "Eco Earn Dashboard Screenshots",
     imageSrc: "/images/eco-earn-cover.png",
     repo: "https://github.com/Kishore2005-kish/Eco-Earn",
+    metrics: ["Gemini Flash Vision", "Firebase Auth + Firestore", "Gamified reward loops"],
   },
   {
     name: "SmartRecycle",
@@ -163,6 +171,7 @@ export const projects: Project[] = [
     imageSlot: "SmartRecycle Product Screenshots",
     imageSrc: "/images/smartrecycle-cover.png",
     repo: "https://github.com/Kishore2005-kish/SMARTRECYCLE",
+    metrics: ["Rs. 25,000 Sustainathon prize", "50 finalist teams", "Civic admin dashboard"],
   },
   {
     name: "Deepfake Audio Detector",
@@ -176,6 +185,7 @@ export const projects: Project[] = [
     imageSlot: "Deepfake Audio Demo Images",
     imageSrc: "/images/deepfake-audio-detector-cover.png",
     repo: "https://github.com/Kishore2005-kish/deepfake-detector",
+    metrics: ["Real-time waveform analysis", "Audio classification pipeline"],
   },
   {
     name: "Job Trend Analyzer",
@@ -189,6 +199,7 @@ export const projects: Project[] = [
     imageSlot: "Job Trend Analyzer Screenshots",
     imageSrc: "/images/job-trend-analyzer-cover.png",
     repo: "https://github.com/Kishore2005-kish/job-trend-analyzer",
+    metrics: ["Adzuna API integration", "Resume parsing + skill gap detection"],
   },
   {
     name: "Organ Donation System",
@@ -202,6 +213,7 @@ export const projects: Project[] = [
     imageSlot: "Organ Donation System Screenshots",
     imageSrc: "/images/organ-donation-system-cover.png",
     repo: "https://github.com/Kishore2005-kish/organ-donation-system",
+    metrics: ["Donor-recipient matching", "Healthcare workflow tracking"],
   },
   {
     name: "Secure Online Voting System",
@@ -215,6 +227,7 @@ export const projects: Project[] = [
     imageSlot: "Secure Voting Screenshots",
     imageSrc: "/images/secure-online-voting-system-cover.png",
     repo: "https://github.com/Kishore2005-kish/online-voting-system",
+    metrics: ["Secure ballot flow", "Admin election controls"],
   },
 ];
 
@@ -223,7 +236,7 @@ export const skillGroups = [
   { icon: Code2, title: "Frontend Engineering", skills: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Framer Motion"] },
   { icon: Globe2, title: "Backend Engineering", skills: ["FastAPI", "Node.js", "REST APIs", "Auth", "Server Logic"] },
   { icon: Database, title: "Databases", skills: ["PostgreSQL", "Firestore", "Firebase", "Data Modeling"] },
-  { icon: Sparkles, title: "Tools", skills: ["Git", "Vercel", "GSAP", "Lenis", "API Integrations"] },
+  { icon: Sparkles, title: "Tools", skills: ["Git", "Vercel", "React Three Fiber", "API Integrations"] },
   { icon: Figma, title: "Design", skills: ["UI/UX", "Product Thinking", "Storytelling", "Dashboards"] },
 ];
 

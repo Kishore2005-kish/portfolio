@@ -3,17 +3,33 @@
 import { Github, Menu, X } from "lucide-react";
 import Link from "next/link";
 import { useState } from "react";
+import { useActiveSection } from "@/hooks/use-active-section";
 import { navItems, profile } from "@/data/portfolio";
 import { scrollToSection } from "@/lib/scroll-to-section";
 import { cn } from "@/lib/utils";
 
 export function SiteNav() {
   const [open, setOpen] = useState(false);
+  const activeSection = useActiveSection(navItems.map((item) => item.href));
 
   const handleNavClick = (href: string) => {
-    scrollToSection(href);
+    scrollToSection(href, { smooth: true });
     setOpen(false);
   };
+
+  const navLinkClass = (href: string, mobile = false) =>
+    cn(
+      mobile
+        ? "rounded-2xl px-4 py-3 text-left text-sm font-semibold transition"
+        : "rounded-full px-4 py-2 text-sm font-medium transition",
+      activeSection === href
+        ? mobile
+          ? "bg-white/55 text-black"
+          : "bg-white/55 text-black shadow-[inset_0_1px_0_rgba(255,255,255,0.8)]"
+        : mobile
+          ? "text-black/70 hover:bg-white/45"
+          : "text-black/62 hover:bg-white/45 hover:text-black"
+    );
 
   return (
     <header className="fixed left-0 right-0 top-4 z-50">
@@ -27,7 +43,8 @@ export function SiteNav() {
               type="button"
               key={item.href}
               onClick={() => handleNavClick(item.href)}
-              className="rounded-full px-4 py-2 text-sm font-medium text-black/62 transition hover:bg-white/45 hover:text-black"
+              aria-current={activeSection === item.href ? "page" : undefined}
+              className={navLinkClass(item.href)}
             >
               {item.label}
             </button>
@@ -68,7 +85,8 @@ export function SiteNav() {
               type="button"
               key={item.href}
               onClick={() => handleNavClick(item.href)}
-              className="rounded-2xl px-4 py-3 text-left text-sm font-semibold text-black/70 hover:bg-white/45"
+              aria-current={activeSection === item.href ? "page" : undefined}
+              className={navLinkClass(item.href, true)}
             >
               {item.label}
             </button>

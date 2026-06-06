@@ -1,6 +1,7 @@
 import {
   ArrowRight,
   Download,
+  ExternalLink,
   Github,
   Linkedin,
   Mail,
@@ -10,6 +11,7 @@ import {
 import Link from "next/link";
 import { AmbientCanvas } from "@/components/ambient-canvas";
 import { ButtonLink } from "@/components/button-link";
+import { ContactForm } from "@/components/contact-form";
 import { GitHubShowcase } from "@/components/github-showcase";
 import { PlaceholderFrame } from "@/components/placeholder-frame";
 import { Reveal } from "@/components/reveal";
@@ -84,8 +86,8 @@ function HeroSection() {
         </div>
         <Reveal delay={0.18} className="relative">
           <PlaceholderFrame
-            label="Sustainathon award moment"
-            src="/images/sustainathon-award2.png"
+            label="Professional Portrait"
+            src={profile.portrait}
             className="aspect-[4/5] min-h-[420px] shadow-[0_32px_100px_rgba(0,0,0,0.22)]"
           />
           <div className="glass absolute -bottom-6 left-4 right-4 grid grid-cols-2 gap-3 rounded-[1.5rem] p-3 sm:left-8 sm:right-8 sm:grid-cols-4">
@@ -225,6 +227,14 @@ function FlagshipSection() {
             <h2 className="mt-6 text-5xl font-semibold tracking-tight text-balance sm:text-7xl">{flagship.name}</h2>
             <p className="mt-5 text-2xl font-semibold text-white/86 text-balance">{flagship.tagline}</p>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-white/58">{flagship.copy}</p>
+            <ul className="mt-6 grid gap-3">
+              {flagship.proof.map((line) => (
+                <li key={line} className="flex gap-3 text-base leading-7 text-white/68">
+                  <span className="mt-2 size-1.5 shrink-0 rounded-full bg-emerald-400" aria-hidden="true" />
+                  {line}
+                </li>
+              ))}
+            </ul>
             <div className="mt-8 flex flex-wrap gap-2">
               {flagship.tech.map((tech) => (
                 <span key={tech} className="rounded-full border border-white/10 bg-white/7 px-3 py-1.5 text-sm font-medium text-white/72">
@@ -284,6 +294,18 @@ function ProjectsSection() {
                   <ProductCopy label="Solution" copy={project.solution} />
                   <ProductCopy label="Impact" copy={project.impact} />
                 </div>
+                {project.metrics && project.metrics.length > 0 ? (
+                  <div className="mt-7 flex flex-wrap gap-2">
+                    {project.metrics.map((metric) => (
+                      <span
+                        key={metric}
+                        className="rounded-full border border-emerald-700/15 bg-emerald-700/[0.08] px-3 py-1.5 text-sm font-semibold text-emerald-800"
+                      >
+                        {metric}
+                      </span>
+                    ))}
+                  </div>
+                ) : null}
                 <div className="mt-7 flex flex-wrap gap-2">
                   {project.tech.map((tech) => (
                     <span key={tech} className="rounded-full bg-black/[0.055] px-3 py-1.5 text-sm font-semibold text-black/62">
@@ -298,10 +320,15 @@ function ProjectsSection() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-8 flex gap-3">
+                <div className="mt-8 flex flex-wrap gap-3">
                   <ButtonLink href={project.repo ?? profile.github} icon={Github} variant={index % 2 === 0 ? "dark" : "ghost"}>
                     View Code
                   </ButtonLink>
+                  {project.demoUrl ? (
+                    <ButtonLink href={project.demoUrl} icon={ExternalLink} variant="light">
+                      Live Demo
+                    </ButtonLink>
+                  ) : null}
                 </div>
               </div>
             </Reveal>
@@ -412,6 +439,7 @@ function ContactSection() {
               );
             })}
           </div>
+          <ContactForm />
         </Reveal>
         <div className="mt-8 flex flex-col justify-between gap-3 text-sm text-white/38 sm:flex-row">
           <p>© 2026 Kishore P. Product-Focused AI Engineer.</p>
