@@ -1,5 +1,4 @@
 import {
-  ArrowDown,
   ArrowRight,
   Download,
   Github,
@@ -14,6 +13,7 @@ import { ButtonLink } from "@/components/button-link";
 import { GitHubShowcase } from "@/components/github-showcase";
 import { PlaceholderFrame } from "@/components/placeholder-frame";
 import { Reveal } from "@/components/reveal";
+import { ScrollDownButton } from "@/components/scroll-down-button";
 import { SiteNav } from "@/components/site-nav";
 import {
   achievements,
@@ -102,12 +102,10 @@ function HeroSection() {
           </div>
         </Reveal>
       </div>
-      <Link
+      <ScrollDownButton
         href="#about"
-        className="absolute bottom-6 left-1/2 hidden -translate-x-1/2 items-center gap-2 rounded-full border border-black/10 bg-white/54 px-4 py-2 text-sm font-medium text-black/62 backdrop-blur transition hover:text-black md:inline-flex"
-      >
-        Scroll <ArrowDown className="size-4 animate-bounce" aria-hidden="true" />
-      </Link>
+        className="liquid-glass-pill absolute bottom-6 left-1/2 hidden -translate-x-1/2 items-center gap-2 rounded-full px-4 py-2 text-sm font-medium text-black/68 transition hover:text-black md:inline-flex"
+      />
     </section>
   );
 }
